@@ -1,0 +1,84 @@
+look_sql //²é¿´±í
+exit_sql //ÍË³ö
+create table student ( name char(10) num int );
+create table class1 ( classroom char(8)  classnum int );
+create table class2 ( classroom char(9)  classnum int );
+E:\\MyProjects\\DBMS\\date\\zhiduan.dat
+
+insert into  class2 ( classroom classnum ) value ( 'aaaa' , 20 );
+insert into  class2 ( classroom classnum ) value ( 'aaab' , 20 );
+insert into  class2 ( classroom classnum ) value ( 'aaac' , 20 );
+insert into  class2 ( classroom classnum ) value ( 'aaad' , 20 );
+
+insert into student ( name num ) value ( 'yssa' , 10 );
+insert into student ( name num ) value ( 'yssb' , 40 );
+insert into student ( name num ) value ( 'yjec' , 90 );
+
+insert into student ( name ,num ) value ( 'ysss' , 10 );
+insert into student ( name ,num ) value ( 'ysss' , 40 );
+insert into student ( name ,num ) value ( 'yjee' , 90 );
+
+insert into  class1 ( classroom ,classnum ) value ( 'bbba' , 30 );
+insert into  class1 ( classroom ,classnum ) value ( 'cccb' , 30 );
+insert into  class1 ( classroom ,classnum ) value ( 'bbbc' , 30 );
+insert into  class1 ( classroom ,classnum ) value ( 'bbbd' , 30 );
+insert into  class1 ( classroom ,classnum ) value ( 'bbbe' , 30 );
+insert into  class1 ( classroom ,classnum ) value ( 'cccf' , 30 );
+insert into  class1 ( classroom ,classnum ) value ( 'bbbg' , 30 );
+insert into  class1 ( classroom ,classnum ) value ( 'bbbh' , 30 );
+insert into  class1 ( classroom ,classnum ) value ( 'bbbh' , 40 );
+
+
+insert into  class2 ( classroom ,classnum ) value ( 'aaaa' , 20 );
+insert into  class2 ( classroom ,classnum ) value ( 'aaab' , 20 );
+insert into  class2 ( classroom ,classnum ) value ( 'aaac' , 20 );
+insert into  class2 ( classroom ,classnum ) value ( 'aaad' , 20 );
+
+insert into  class2 ( classroom ,classnum ) value ( 'aaad' , 30 );
+insert into  class2 ( class ,classnum ) value ( 'aaaa' , 20 );
+
+create table room ( id int  name char(10) num int class char(10)  );
+
+insert into  room ( id ,name , num ,class  ) value ( 1 , 'no1' , 20 , 'liuz' ) ;
+
+
+
+update class1 set classnum=50 where classroom='bbba' ;
+
+
+
+
+insert into student ( name num ) value ( 'ysss' , 21 );
+select name,num from student where name='ÁõÅó' ;
+select name,num from student where 1 ;
+select classroom,classnum from class2 where 1 ;
+select classroom,classnum from class2 student where name='ÁõÅó' and num=20 ;
+select name,num from class2,student where name='ÁõÅó' and num=20 ;
+select name,num from student,class2 where name='ÁõÅó and num=20 ;
+select classroom,classnum from class1 where 1 ;
+select name,num from student,class2 where name='aaaa' and num=20 ;
+select name,num from student where name='ysss' and num=10 ;
+select * from student where 1 ;
+
+delete from student where num>=10 ;
+delete from student where name='aa' and num=20 ;
+delete from student where num>30 ;
+delete from student where name='yjee' and num=90 ;
+delete from student where name='yjee' and num<40;
+delete from student where num=40;
+delete from class2 where classnum=20 ;
+delete from class1 where classnum=30 ;
+delete from class1 where classroom='bbba' or classnum=40 ;
+delete from class2 where classnum<30 ;
+
+
+
+
+
+
+
+
+
+
+
+
